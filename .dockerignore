@@ -1,5 +1,5 @@
 /node_modules
 .vscode
-.git
+.git/
 .gitignore
 README.md
