@@ -13,22 +13,25 @@ pipeline {
         stage('Build images') {
             steps {
                 script {
-                    gv.buildApp()
+                    //gv.buildApp()
                 }
+                echo 'Building the images....'
             }
         }
         stage('Test') {
             steps {
                 script {
-                    gv.testApp()
+                    //gv.testApp()
                 }
+                echo 'Testing the application..'
             }
         }
         stage('Deploy') {
             steps {
                 script {
-                    gv.deployApp()
+                    //gv.deployApp()
                 }
+                echo 'Deploying the application...'
             }
         }
     }
