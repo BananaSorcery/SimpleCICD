@@ -4,33 +4,34 @@ pipeline {
     stages {
         stage('init') {
             steps {
-                script {
+                /* script {
                     gv = load "script.groovy"
-                    //gv.loginDockerhub()
-                }
+                    gv.loginDockerhub()
+                } */
+                echo 'Init stages....'
             }
         }
         stage('Build images') {
             steps {
-                script {
+                /* script {
                     //gv.buildApp()
-                }
+                } */
                 echo 'Building the images....'
             }
         }
         stage('Test') {
             steps {
-                script {
-                    //gv.testApp()
-                }
+                /* script {
+                    gv.testApp()
+                } */
                 echo 'Testing the application..'
             }
         }
         stage('Deploy') {
             steps {
-                script {
-                    //gv.deployApp()
-                }
+                /* script {
+                    gv.deployApp()
+                } */
                 echo 'Deploying the application...'
             }
         }
