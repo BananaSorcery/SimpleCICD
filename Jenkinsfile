@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     gv = load "script.groovy"
-                    gv.loginDockerhub()
+                    //gv.loginDockerhub()
                 }
             }
         }
