@@ -1,6 +1,6 @@
 def buildImage(){
     echo 'Building docker image....'
-    sh 'docker build -t bananasorcery/simple-cicd:latest .'
+    sh 'docker build -t bananasorcery/simple-cicd:latest ~/SimpleCICD' //Build image from SimpleCICD folder
 }
 
 def loginDockerhub() {
