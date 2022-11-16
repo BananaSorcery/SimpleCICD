@@ -1,20 +1,16 @@
+def buildImage(){
+    echo 'Building docker image....'
+    sh 'docker build -t bananasorcery/simple-cicd:latest .'
+}
+
 def loginDockerhub() {
-    echo 'Login....'
+    sh 'Docker login -u bananasorcery -p $(dockerhubPWD)'
 }
 
-def buildApp(){
-    echo 'Building the images....'
-    //sh 'docker build -t bananasorcery/simple-cicd:latest'
-}
-
-/* def pushtoDockerHub() {
-
+ def pushtoDockerHub() {
     sh 'docker push bananasorcery/simple-cicd:latest'
-} */
+} 
 
-def testApp(){
-    echo 'Testing the application..'
-}
 
 def deployApp(){
     echo 'Deploying the application...'

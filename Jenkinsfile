@@ -1,6 +1,6 @@
 def gv
 
-pipeline { 
+pipeline {
     agent any
 
     stages {
@@ -8,25 +8,27 @@ pipeline {
             steps {
                 script {
                     gv = load "script.groovy"
-                    gv.loginDockerhub()
                 }
                 echo 'Init stages....'
             }
         }
-        stage('Build images') {
+        stage('Build Docker Image') {
             steps {
                 script {
-                    gv.buildApp()
+                    gv.buildImage()
                 }
-                echo 'Building stage....'
+                echo 'Building....'
             }
         }
-        stage('Test') {
+        stage('Push Image to Dockerhub') {
             steps {
                 script {
-                    gv.testApp()
+                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubPWD')]) {
+                        gv.loginDockerhub()
+                        gv.pushtoDockerHub()
+                    }
                 }
-                echo 'Testing stage...'
+                echo 'Pushing to DockerHub...'
             }
         }
         stage('Deploy') {
