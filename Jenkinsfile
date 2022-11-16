@@ -14,6 +14,8 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
+                echo 'I am'
+                sh 'whoami'
                 script {
                     gv.buildImage()
                 }
