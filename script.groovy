@@ -7,7 +7,7 @@ def buildImage(){
 }
 
 def loginDockerhub() {
-    sh "Docker login -u bananasorcery -p ${dockerhubPWD}"
+    sh "docker login -u bananasorcery -p ${dockerhubPWD}"
 }
 
  def pushtoDockerHub() {
