@@ -1,5 +1,5 @@
 def buildImage(){
-    echo 'Cleaning old image..."
+    echo 'Cleaning old image...'
     sh 'docker rmi bananasorcery/simple-cicd:latest'
     
     echo 'Building docker image....'
