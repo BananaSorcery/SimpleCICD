@@ -1,0 +1,15 @@
+body{
+    background-color: #c6dbff;
+}
+
+.row{
+    margin: 5px -7px;
+}
+
+#notify{
+    width: 164.7px;
+    height: 29.2px;
+    text-align: start;
+    color: red;
+    font-weight: 600;
+}

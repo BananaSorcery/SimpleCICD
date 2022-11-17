@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="SimpleCalculator.css">
+
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3">
+          <h1>Bé tập tính</h1>
+        </div>
+        <div class="col-6"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3">
+          <form name="frm" id="frm">
+            <div class="row">
+              <div class="col">
+                <div class="text">Số thứ nhất</div> 
+              </div>
+              <div class="col">
+                <input type="text" name="expr" id="expr" size="15" onchange="CheckValue()">
+              </div>
+            </div>
+            
+            
+            <div class="row">
+              <div class="col">
+                <div class="text">Số thứ hai</div> 
+              </div>
+              <div class="col">
+                <input type="text" name="expr_2" id="expr_2" size="15" onchange="CheckValue()">
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="col">
+                <div class="text">Kết quả</div> 
+              </div>
+              <div class="col">
+                <input type="text" id="result" size="15" >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="text">Thông báo</div> 
+              </div>
+              <div class="col">
+                <div id="notify"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-3">
+
+          <input type="radio" id="Addition" name="arithmetic" value="add">
+          <label for="Addition">Cộng</label>
+
+          <input type="radio" id="Subtraction" name="arithmetic" value="subtr">
+          <label for="Subtraction">Trừ</label>
+          
+          <br>
+
+          <input type="radio" id="Multiplication" name="arithmetic" value="multi">
+          <label for="Multiplication">Nhân</label>
+
+          <input type="radio" id="Division" name="arithmetic" value="div">
+          <label for="Division">Chia</label>
+          
+          <br>
+          <br>
+          <input type="button" value="Tính" onclick="compute(this.form)">
+
+          <br>
+          
+        </div>
+        <div class="col-3"></div>
+
+      </div>
+      
+    </div>
+
+      <script src="SimpleCalculator.js"></script>  
+  </body>
+</html>
+
