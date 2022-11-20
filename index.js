@@ -2,7 +2,7 @@ const app = require('express')();
 
 app.get('/', (req, res) =>
     //res.json({ message:'Hello World!' })
-    res.send("Hello world!")
+    res.send("Deployment Success!")
 );
 
 const port = process.env.PORT || 8080;
