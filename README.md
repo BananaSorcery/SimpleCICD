@@ -3,4 +3,4 @@ Simple CI/CD project in which will automating containerized app, build image, pu
 
 - Docker hub image: hub.docker.com/repository/docker/bananasorcery/simple-cicd
 - App deploy on: image-deploy-demo.azurewebsites.net
-- Jenkins Server IP: 20.168.199.26:8080
+- Jenkins Server IP: 20.168.199.26:8080 [username: guest, password: 1]
