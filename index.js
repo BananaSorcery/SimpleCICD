@@ -2,7 +2,7 @@ const app = require('express')();
 
 app.get('/', (req, res) =>
     //res.json({ message:'Hello World!' })
-    res.send("Deploy with azure web hook...")
+    res.send("Deployment Success !!!")
 );
 
 const port = process.env.PORT || 8080;
