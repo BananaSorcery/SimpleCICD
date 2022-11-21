@@ -2,7 +2,7 @@ const app = require('express')();
 
 app.get('/', (req, res) =>
     //res.json({ message:'Hello World!' })
-    res.send("App is working on Azure !!!")
+    res.send("Deploying....")
 );
 
 const port = process.env.PORT || 8080;
