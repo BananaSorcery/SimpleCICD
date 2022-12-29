@@ -15,6 +15,12 @@
 /* ==============================================
 1.GENERAL
 =============================================== */
+/* custom style*/
+h1{
+    color: white;
+}
+
+/* default style*/
 body{
 	overflow-x: hidden;
 	overflow-y: auto;
