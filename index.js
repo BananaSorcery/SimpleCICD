@@ -2,7 +2,7 @@
 
 // app.get('/', (req, res) =>
 //     //res.json({ message:'Hello World!' })
-//     res.send(<h1>"Hello World!"</h1>)
+//     res.send('<h1>Hello World!</h1>')
 // );
 
 // const port = process.env.PORT || 8080;
@@ -12,26 +12,17 @@
 // })
 
 const express = require('express');
-const app = express();
 const path = require('path');
-const router = express.Router();
 
-app.use(express.static(path.join(__dirname, 'public')))
+const app = express();
+const port = process.env.PORT || 8080;
 
-app.get('/', (req, res) => {
-    res.render('index');
+// sendFile will go here
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
-// router.get('/about',function(req,res){
-//   res.sendFile(path.join(__dirname+'/about.html'));
-// });
-
-// router.get('/sitemap',function(req,res){
-//   res.sendFile(path.join(__dirname+'/sitemap.html'));
-// });
-
-//add the router
-// app.use('/', router);
-app.listen(process.env.port || 3000);
-
-console.log('Running at Port 3000');
+app.listen(port,() => {
+    console.log(`Example app is working on port ${port}`);
+    console.log((path.join(__dirname, '/views/index.html')));
+})
