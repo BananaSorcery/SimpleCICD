@@ -7,6 +7,6 @@ Simple CI/CD project in which will automating these following tasks: containeriz
 
 To run webapp on localhost:51000, do these following steps:
 1. Pull image from Docker hub  
-      &nbsp `docker pull bananasorcery/simple-cicd`;
+      &nbsp; `docker pull bananasorcery/simple-cicd`
 3. Start webapp using docker compose  
    `docker compose up -d`
