@@ -9,4 +9,4 @@ To run webapp on localhost:51000, do these following steps:
 1. Pull image from Docker hub  
 &nbsp;&nbsp;&nbsp;&nbsp;`docker pull bananasorcery/simple-cicd`
 3. Start webapp using docker compose  
-   `docker compose up -d`
+   &nbsp;&nbsp;&nbsp;&nbsp;`docker compose up -d`
