@@ -9,5 +9,5 @@ Simple CI/CD project in which will automating these following tasks: containeriz
 3. Start webapp using docker compose  
 &nbsp;&nbsp;&nbsp;&nbsp;`docker compose up -d`
 
-#Pending
+<strong>Pending</strong>
 - Find a place to deploy image (online)
