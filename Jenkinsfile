@@ -15,7 +15,6 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    echo 'Hello World !!!'
                     gv.buildImage()
                 }
                 echo 'Building....'
