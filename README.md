@@ -11,3 +11,5 @@ Simple CI/CD project in which will automating these following tasks: containeriz
 
 <strong>Pending</strong>
 - Find a place to deploy image (online)
+
+Testing Build
